@@ -1,0 +1,5 @@
+{
+  "ollama_endpoint": "http://localhost:11434",
+  "audio_storage_path": "storage\\audio",
+  "transcript_storage_path": "storage\\transcripts"
+}

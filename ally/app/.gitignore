@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+database.db
+storage/audio/*
+storage/transcripts/*
+!storage/audio/.gitkeep
+!storage/transcripts/.gitkeep
+static/.gitkeep

@@ -1,0 +1,67 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+.tox/
+.venv/
+venv/
+env/
+
+# --- Node / Vite ---
+node_modules/
+*.local
+
+# --- Build output ---
+# Catches both PyInstaller (ally/app/build, ally/app/dist) and Vite (ally/app/frontend/dist)
+build/
+dist/
+
+# --- Databases (SQLite runtime data) ---
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# --- Recorded audio + transcripts (runtime data) ---
+# Ignore contents but keep the empty dirs (via .gitkeep) so the app can write to them on first run.
+pi/recordings/synced/*
+pi/recordings/unsynced/*
+!pi/recordings/synced/.gitkeep
+!pi/recordings/unsynced/.gitkeep
+ally/app/storage/audio/*
+ally/app/storage/transcripts/*
+!ally/app/storage/audio/.gitkeep
+!ally/app/storage/transcripts/.gitkeep
+
+# --- Environment files ---
+.env
+.env.local
+.env.*.local
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude Code (per-machine config / local settings) ---
+.claude/
+
+# --- Personal handoff docs (move outside repo before publishing) ---
+_handoff/
+
+# --- Logs ---
+*.log

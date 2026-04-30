@@ -1,0 +1,22 @@
+[Unit]
+Description=Rendu Pi UI
+After=graphical.target avahi-daemon.service
+Wants=avahi-daemon.service
+
+[Service]
+Type=simple
+User=__USER__
+Group=__USER__
+WorkingDirectory=__HOME__
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/__USER__/.Xauthority
+Environment=PYTHONUNBUFFERED=1
+Environment=RENDU_ALLY_HOST=__ALLY_HOST__
+ExecStart=/usr/bin/python3 __HOME__/main.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical.target
