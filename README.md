@@ -105,15 +105,6 @@ npm install
 npm run dev
 ```
 
-## Tests
-
-```bash
-cd pi
-pytest
-```
-
-29 tests cover the database layer, audio mock, storage, sync service, and Whisper subprocess wrapper. The UI itself is exercised by hand against `DEV_MODE`.
-
 ## Engineering process
 
 Spec-first, with a clear division of labor between the engineer and the AI agent.
