@@ -139,7 +139,3 @@ I wrote these specs as the authoritative source for implementation and as the in
 - [ally/rendu_frontend_integration.md](ally/rendu_frontend_integration.md) - React-to-API contract
 - [ally/rendu_mdns_setup.md](ally/rendu_mdns_setup.md) - LAN discovery
 - [ally/rendu_settings_spec.md](ally/rendu_settings_spec.md) - Configuration surface
-
-## Status
-
-In active use by the target clinician. The system handles the full record-transcribe-sync-format-review loop. Future work includes a richer note editor on the Ally side and a graceful-shutdown path on the Pi to handle power-loss mid-recording. New work follows the same spec-first, agent-paired loop described above.
