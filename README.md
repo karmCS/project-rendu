@@ -15,6 +15,15 @@ The Pi UI runs at the native 800x480 of the official 7-inch touchscreen. All fou
 | ![Sync screen](docs/screenshots/03-sync.png) | ![Touch keyboard](docs/screenshots/04-touch-keyboard.png) |
 | Sync screen with the pending count and the SYNC NOW action. | Custom in-app touch keyboard. No physical keyboard or system OSK required; works the same in DEV_MODE on Windows. |
 
+The Ally UI runs in the browser. All four shots below are real renders of the app.
+
+| | |
+|---|---|
+| ![Kanban board](docs/screenshots/ally/01-kanban.png) | ![Note detail](docs/screenshots/ally/02-note-detail.png) |
+| Kanban board — notes moving from Unsynced through Processing to Ready to Review and Done. | Note detail — audio playback, raw transcript accordion, and the LLM-formatted SOAP note side by side. |
+| ![Templates](docs/screenshots/ally/03-templates.png) | ![Settings](docs/screenshots/ally/04-settings.png) |
+| Templates editor — built-in Epic, SOAP, DAP, and Progress Note formats, each editable in place. | Settings — Ollama endpoint, storage paths, and disk usage. |
+
 ## Why
 
 Off-the-shelf medical scribes are cloud-based and subscription-priced. This project is a self-hosted alternative built for a single non-technical clinician, with simplicity and privacy as the primary constraints. No cloud APIs, no accounts, no subscriptions, no telemetry.
